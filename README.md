@@ -1,6 +1,6 @@
 Empezando por lo que es un **espacio de probabilidad**, es una triple $(\Omega, \mathcal{F}, P)$ donde $\Omega$ es un conjunto de "salidas", $\mathcal{F}$ es un conjunto de "eventos" y $P$ es una función tal que $P:\mathcal{F}\mapsto[0,1]$, es decir, $P$ es una función que le asigna una **probabilidad** a los eventos. Asumimos que $\mathcal{F}$ es una  $\sigma-$álgebra; i,e,. 
 
->[!INFO] Definición: $\sigma-$álgebra:
+>**INFO** Definición: $\sigma-$álgebra:
 >Una colección no vacía de subconjuntos de $\Omega$ que satisfacen:
 I) Si $A \in\mathcal{F}$ entonces $A^{c}\in\mathcal{F}$ 
 II) Si $A_{i}\in\mathcal{F}$ es una secuencia contable de conjuntos entonces $\bigcup_{i}A_{i}\in\mathcal{F}$ 
