@@ -1,3 +1,4 @@
+# Teoría de la Medida
 Empezando por lo que es un **espacio de probabilidad**, es una triple $(\Omega, \mathcal{F}, P)$ donde $\Omega$ es un conjunto de "salidas", $\mathcal{F}$ es un conjunto de "eventos" y $P$ es una función tal que $P:\mathcal{F}\mapsto[0,1]$ , es decir, $P$ es una función que le asigna una **probabilidad** a los eventos. Asumimos que $\mathcal{F}$ es una  $\sigma-$ álgebra; i,e,. 
 
 >Definición: $\sigma-$ álgebra:
