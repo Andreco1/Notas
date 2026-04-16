@@ -1,15 +1,15 @@
-Empezando por lo que es un **espacio de probabilidad**, es una triple $(\Omega, \mathcal{F}, P)$ donde $\Omega$ es un conjunto de "salidas", $\mathcal{F}$ es un conjunto de "eventos" y $P$ es una función tal que $P:\mathcal{F}\mapsto[0,1]$, es decir, $P$ es una función que le asigna una **probabilidad** a los eventos. Asumimos que $\mathcal{F}$ es una  $\sigma-$álgebra; i,e,. 
+Empezando por lo que es un **espacio de probabilidad**, es una triple $(\Omega, \mathcal{F}, P)$ donde $\Omega$ es un conjunto de "salidas", $\mathcal{F}$ es un conjunto de "eventos" y $P$ es una función tal que $P:\mathcal{F}\mapsto[0,1]$ , es decir, $P$ es una función que le asigna una **probabilidad** a los eventos. Asumimos que $\mathcal{F}$ es una  $\sigma-$ álgebra; i,e,. 
 
->Definición: $\sigma-$álgebra:
+>Definición: $\sigma-$ álgebra:
 >Una colección no vacía de subconjuntos de $\Omega$ que satisfacen:
 I) Si $A \in\mathcal{F}$ entonces $A^{c}\in\mathcal{F}$ 
 II) Si $A_{i}\in\mathcal{F}$ es una secuencia contable de conjuntos entonces $\bigcup_{i}A_{i}\in\mathcal{F}$ 
 
-*Contable significa finito o contable infinito, es decir,  a lo más del tamaño de los naturales $\mathbb{N}$*.
+*Contable significa finito o contable infinito, es decir,  a lo más del tamaño de los naturales* $\mathbb{N}$ .
 <>
 Ya que la $\bigcap_{i}A_{i}=\left( \bigcup_{i}A_{i} \right)^{c}$ , entonces una $\sigma-$ álgebra es cerrada bajo intersecciones contables. 
 
-Sin $P$, $(\Omega, \mathcal{F})$ es llamado "**espacio de medida**", es decir, un espacio donde s puede poner una medida, eso es lo siguiente que vamos a definir. 
+Sin $P$ , $(\Omega, \mathcal{F})$ es llamado "**espacio de medida**", es decir, un espacio donde s puede poner una medida, eso es lo siguiente que vamos a definir. 
 
 >Definición: Medida
 >Es un conjunto de funciones aditivas no negativo y contable,
@@ -27,21 +27,21 @@ Sin $P$, $(\Omega, \mathcal{F})$ es llamado "**espacio de medida**", es decir, u
 >$$
 
 
-Si $\mu(\Omega)=1$ llamamos a $\mu$ la medida de la probabilidad. Las medidas de probabilidad las vamos a denotar como $P$.
+Si $\mu(\Omega)=1$ llamamos a $\mu$ la medida de la probabilidad. Las medidas de probabilidad las vamos a denotar como $P$ .
 
 >Definición: Función aditiva:
->Sea $\mu:\mathcal{C}\mapsto\mathbb{\bar{R}}=\mathbb{R}\cup\{ -\infty,\infty \}$ una función definida sobre una colección de conjuntos $\mathcal{C}$. Decimos que $\mu$ es finitamente aditiva si:
+>Sea $\mu:\mathcal{C}\mapsto\mathbb{\bar{R}}=\mathbb{R}\cup\{ -\infty,\infty \}$ una función definida sobre una colección de conjuntos $\mathcal{C}$ . Decimos que $\mu$ es finitamente aditiva si:
 >- $\mu(\emptyset)=0$
->- Para toda colección finita $(A_{n})_{1\leq n\leq m}$ de conjuntos $\mathcal{C}$, disjuntos dos a dos, tales que $\bigcup_{i=1}^{m}A_{i\in \mathcal{C}}$ se tiene
+>- Para toda colección finita $(A_{n})_{1\leq n\leq m}$ de conjuntos $\mathcal{C}$ , disjuntos dos a dos, tales que $\bigcup_{i=1}^{m}A_{i\in \mathcal{C}}$ se tiene
 >
 >$$
 >\mu\left( \bigcup_{n=1}^{m}A_{n} \right)=\sum_{n=1}^{n}\mu(A_{n})
 >$$
 
 
-Toda suma tiene que estar bien definida, tal que no pueda pasar que $\mu(A_{i})=-\infty$ y que $\mu(A_{j})=\infty$ para cualesquiera $i,j$. 
+Toda suma tiene que estar bien definida, tal que no pueda pasar que $\mu(A_{i})=-\infty$ y que $\mu(A_{j})=\infty$ para cualesquiera $i,j$ . 
 
-Los siguientes resultados muestran las consecuencias de la **definición de medida**. En todos los casos, consideramos que todos los conjuntos están en $\mathcal{F}$. 
+Los siguientes resultados muestran las consecuencias de la **definición de medida**. En todos los casos, consideramos que todos los conjuntos están en $\mathcal{F}$ . 
 
 >Teorema 1.1.1 :
 >Sea $\mu$ una medida en $(\Omega, \mathcal{F})$ 
