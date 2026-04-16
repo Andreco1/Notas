@@ -7,7 +7,7 @@ II) Si $A_{i}\in\mathcal{F}$ es una secuencia contable de conjuntos entonces $\b
 
 *Contable significa finito o contable infinito, es decir,  a lo más del tamaño de los naturales $\mathbb{N}$*.
 <>
-Ya que la $\bigcap_{i}A_{i}=\left( \bigcup_{i}A_{i} \right)^{c}$, entonces una $\sigma-$álgebra es cerrada bajo intersecciones contables. 
+Ya que la $\bigcap_{i}A_{i}=\left( \bigcup_{i}A_{i} \right)^{c}$ , entonces una $\sigma-$ álgebra es cerrada bajo intersecciones contables. 
 
 Sin $P$, $(\Omega, \mathcal{F})$ es llamado "**espacio de medida**", es decir, un espacio donde s puede poner una medida, eso es lo siguiente que vamos a definir. 
 
