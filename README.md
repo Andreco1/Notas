@@ -11,7 +11,7 @@ Ya que la $\bigcap_{i}A_{i}=\left( \bigcup_{i}A_{i} \right)^{c}$, entonces una $
 
 Sin $P$, $(\Omega, \mathcal{F})$ es llamado "**espacio de medida**", es decir, un espacio donde s puede poner una medida, eso es lo siguiente que vamos a definir. 
 
->[!INFO] Definición: Medida
+>**INFO** Definición: Medida
 >Es un conjunto de funciones aditivas no negativo y contable,
 >$$
 >\mu:\mathcal{F}\mapsto \mathbb{R}
@@ -26,7 +26,7 @@ Sin $P$, $(\Omega, \mathcal{F})$ es llamado "**espacio de medida**", es decir, u
 
 Si $\mu(\Omega)=1$ llamamos a $\mu$ la medida de la probabilidad. Las medidas de probabilidad las vamos a denotar como $P$.
 
->[!INFO] Definición: Función aditiva:
+>**INFO** Definición: Función aditiva:
 >Sea $\mu:\mathcal{C}\mapsto\mathbb{\bar{R}}=\mathbb{R}\cup\{ -\infty,\infty \}$ una función definida sobre una colección de conjuntos $\mathcal{C}$. Decimos que $\mu$ es finitamente aditiva si:
 >- $\mu(\emptyset)=0$
 >- Para toda colección finita $(A_{n})_{1\leq n\leq m}$ de conjuntos $\mathcal{C}$, disjuntos dos a dos, tales que $\bigcup_{i=1}^{m}A_{i\in \mathcal{C}}$ se tiene 
@@ -39,7 +39,7 @@ Toda suma tiene que estar bien definida, tal que no pueda pasar que $\mu(A_{i})=
 
 Los siguientes resultados muestran las consecuencias de la **definición de medida**. En todos los casos, consideramos que todos los conjuntos están en $\mathcal{F}$. 
 
->[!INFO] Teorema 1.1.1 :
+>**INFO** Teorema 1.1.1 :
 >Sea $\mu$ una medida en $(\Omega, \mathcal{F})$ 
 >- Monotonía : Si $A\subset B$ entonces $\mu(A)\leq\mu(B)$ 
 >- Subaditividad: Si $A\subset \bigcup_{m\in\mathbb{N}}A_{m}$ entonces $\mu(A)\leq\sum_{m\in\mathbb{N}}A_{m}$ entonces $\mu(A)\leq\sum_{m\in\mathbb{N}}\mu(A_{m})$
@@ -126,7 +126,7 @@ sea $A_{1}-A_{n}\uparrow A_{1}$ así que $\mu(A_{1}-A_{n})=\mu(A_{1})-\mu_{A}$ y
 $$
 \mu(A_{n})\downarrow \mu(A)~~~~\blacksquare
 $$
->[!INFO] Ejemplo 1.1.2. Espacios de probabilidad discretos:
+>**INFO** Ejemplo 1.1.2. Espacios de probabilidad discretos:
 >Sea $\Omega=a$ un conjunto contable, i.e., finito o contable finito (a lo más del tamaño de los $\mathbb{N}$). sea $\mathcal{F}=$el conjunto de todos los subconjuntos de $\Omega$.
 >Sea $P(A)=\sum_{\omega \in A} P(\omega)$ donde $P\geq 0$ y $\sum_{\omega \in \Omega}=1$  
 
