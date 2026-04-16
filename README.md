@@ -59,6 +59,7 @@ Las pruebas de este teorema se obtienen del libro "Probability: Theory and Examp
 
 **Prueba del Teorema 1.1.1:**
 - **Monotonía**:
+
 Sea $B-A=B\cap A^{c}$ la diferencia entre dos conjuntos. Usando $+$ para denotar la union disjunta, $B=A+(B-A)$ entonces:
 
 $$
@@ -68,6 +69,7 @@ $$
 $\therefore \mu(B)\leq\mu(A)~~~~~~~~ \blacksquare$  
 
 - **Subaditividad**:
+
 Si tomamos trozos del conjunto $A$ tal que $A'_{n}=A_{n}\bigcap A$, aseguramos que los conjuntos sean disjuntos, tomamos entonces $B_{1}=A_{1}'$ y para cualquier $n>1$ tomamos a $B_{n}=A_{n}'-\bigcup_{m=1}^{n-1}A'_{m}$, esto vuelve a los conjuntos disjuntos y fuerza que $\bigcup_{n\in\mathbb{N}}B_{n}=A$, ya que $B_{m}\subset A_{m}$ y por la condición de monotonía $\mu(B_{m})\leq\mu(A_{m})$, entonces:
 
 $$
@@ -79,6 +81,7 @@ $$
 $$
 
 - **Continuo por abajo**:
+
 Si $A_{1}\subset A_{2}\subset A_{3}\subset\dots$ y $\bigcup_{i}A_{i}=A$, es decir $A_{i}\uparrow A$ y $\bigcup_{i}A_{i} = A \implies$
 
 $$
@@ -92,6 +95,7 @@ $$
 $$
 
 - **Continuo por arriba:**
+
 sea $A_{1}-A_{n}\uparrow A_{1}$ así que $\mu(A_{1}-A_{n})=\mu(A_{1})-\mu_{A}$ y se sigue que
 
 $$
