@@ -1,7 +1,8 @@
 # Teoría de la Medida
 Empezando por lo que es un **espacio de probabilidad**, es una triple $(\Omega, \mathcal{F}, P)$ donde $\Omega$ es un conjunto de "salidas", $\mathcal{F}$ es un conjunto de "eventos" y $P$ es una función tal que $P:\mathcal{F}\mapsto[0,1]$ , es decir, $P$ es una función que le asigna una **probabilidad** a los eventos. Asumimos que $\mathcal{F}$ es una  $\sigma-$ álgebra; i,e,. 
 
->Definición: $\sigma-$ álgebra:
+>Definición: $\sigma-$ álgebra
+>
 >Una colección no vacía de subconjuntos de $\Omega$ que satisfacen:
 I) Si $A \in\mathcal{F}$ entonces $A^{c}\in\mathcal{F}$ 
 II) Si $A_{i}\in\mathcal{F}$ es una secuencia contable de conjuntos entonces $\bigcup_{i}A_{i}\in\mathcal{F}$ 
@@ -13,6 +14,7 @@ Ya que la $\bigcap_{i}A_{i}=\left( \bigcup_{i}A_{i} \right)^{c}$ , entonces una 
 Sin $P$ , $(\Omega, \mathcal{F})$ es llamado "**espacio de medida**", es decir, un espacio donde s puede poner una medida, eso es lo siguiente que vamos a definir. 
 
 >Definición: Medida
+>
 >Es un conjunto de funciones aditivas no negativo y contable,
 >
 >$$
@@ -30,7 +32,7 @@ Sin $P$ , $(\Omega, \mathcal{F})$ es llamado "**espacio de medida**", es decir, 
 
 Si $\mu(\Omega)=1$ llamamos a $\mu$ la medida de la probabilidad. Las medidas de probabilidad las vamos a denotar como $P$ .
 
->Definición: Función aditiva:
+>Definición: Función aditiva
 >
 >Sea $\mu:\mathcal{C}\mapsto\mathbb{\bar{R}}=\mathbb{R}\cup\{ -\infty,\infty \}$ una función definida sobre una colección de conjuntos $\mathcal{C}$ . Decimos que $\mu$ es finitamente aditiva si:
 >- $\mu(\emptyset)=0$
@@ -46,6 +48,7 @@ Toda suma tiene que estar bien definida, tal que no pueda pasar que $\mu(A_{i})=
 Los siguientes resultados muestran las consecuencias de la **definición de medida**. En todos los casos, consideramos que todos los conjuntos están en $\mathcal{F}$ . 
 
 >Teorema 1.1.1 :
+>
 >Sea $\mu$ una medida en $(\Omega, \mathcal{F})$ 
 >- Monotonía : Si $A\subset B$ entonces $\mu(A)\leq\mu(B)$ 
 >- Subaditividad: Si $A\subset \bigcup_{m\in\mathbb{N}}A_{m}$ entonces $\mu(A)\leq\sum_{m\in\mathbb{N}}A_{m}$ entonces $\mu(A)\leq\sum _ {m\in\mathbb{N}}\mu(A _ {m})$
@@ -103,6 +106,7 @@ $$
 $$
 
 >Ejemplo 1.1.2. Espacios de probabilidad discretos:
+>
 >Sea $\Omega=a$ un conjunto contable, i.e., finito o contable finito (a lo más del tamaño de los $\mathbb{N}$). sea $\mathcal{F}=$ el conjunto de todos los subconjuntos de $\Omega$.
 >Sea $P(A)=\sum_{\omega \in A} P(\omega)$ donde $P\geq 0$ y $\sum_{\omega \in \Omega}=1$  
 
