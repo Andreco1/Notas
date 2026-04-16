@@ -65,58 +65,6 @@ $$
 $$
 
 $\therefore \mu(B)\leq\mu(A)~~~~~~~~ \blacksquare$  
-<div align = "center">
-<script type = "text/tikz">
-\begin{tikzpicture}[domain=-5:5]
-\draw (-2,0) circle [radius=2cm] node[left]{$A$};
-\draw (0,0) circle [radius=2cm] node[left]{$B$};
-\end{tikzpicture}
-</script>
-</div>
-
-Entonces $A^{c}$ sería:
-<div align = "center">
-<script type = "text/tikz">
-\usetikzlibrary{backgrounds}
-\begin{tikzpicture}[domain=-5:5, show background rectangle, background rectangle/.style={fill=black!80}]
-\filldraw[fill=black!80!white!] (0,0) circle [radius=2cm] node[right]{$B$};
-\filldraw[fill = white] (-2,0) circle [radius=2cm] node[left, color = black]{$A$};
-\end{tikzpicture}
-</script>
-</div>
-Entonces la intersección con $B$ sería 
-$B-A=B\cap A^{c}$
-<div align = "center">
-<script type = "text/tikz">
-\begin{tikzpicture}[domain=-5:5]
-\filldraw[fill=black!80!white!] (0,0) circle [radius=2cm] node[right]{$B$};
-\filldraw[fill = white] (-2,0) circle [radius=2cm] node[left, color = black]{$A$};
-\end{tikzpicture}
-</script>
-</div>
-Esto los convierte en conjuntos disjuntos, entonces si ahora definimos la union disjunta como $+$ podemos decir que $B=(B-A) + A$, si ahora tomamos la medida de ambos lados
-
-$$
-\mu(B)=\mu(A)+\mu(B-A)\geq\mu(A)
-$$
-
-el argumento es similar a decir:
-
-$$
-A-B = A-B
-$$
-
-$$
-A=(A-B)+B
-$$
-
-$$
-A=(A-B)+B\leq B
-$$
-
-$$
-\therefore A\leq B ~~~~~~ \blacksquare
-$$
 
 - **Subaditividad**:
 Si tomamos trozos del conjunto $A$ tal que $A'_{n}=A_{n}\bigcap A$, aseguramos que los conjuntos sean disjuntos, tomamos entonces $B_{1}=A_{1}'$ y para cualquier $n>1$ tomamos a $B_{n}=A_{n}'-\bigcup_{m=1}^{n-1}A'_{m}$, esto vuelve a los conjuntos disjuntos y fuerza que $\bigcup_{n\in\mathbb{N}}B_{n}=A$, ya que $B_{m}\subset A_{m}$ y por la condición de monotonía $\mu(B_{m})\leq\mu(A_{m})$, entonces:
