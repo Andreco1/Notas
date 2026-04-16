@@ -30,6 +30,7 @@ Sin $P$ , $(\Omega, \mathcal{F})$ es llamado "**espacio de medida**", es decir, 
 Si $\mu(\Omega)=1$ llamamos a $\mu$ la medida de la probabilidad. Las medidas de probabilidad las vamos a denotar como $P$ .
 
 >Definición: Función aditiva:
+>
 >Sea $\mu:\mathcal{C}\mapsto\mathbb{\bar{R}}=\mathbb{R}\cup\{ -\infty,\infty \}$ una función definida sobre una colección de conjuntos $\mathcal{C}$ . Decimos que $\mu$ es finitamente aditiva si:
 >- $\mu(\emptyset)=0$
 >- Para toda colección finita $(A_{n})_{1\leq n\leq m}$ de conjuntos $\mathcal{C}$ , disjuntos dos a dos, tales que $\bigcup_{i=1}^{m}A_{i\in \mathcal{C}}$ se tiene
