@@ -48,7 +48,7 @@ Los siguientes resultados muestran las consecuencias de la **definición de medi
 >Teorema 1.1.1 :
 >Sea $\mu$ una medida en $(\Omega, \mathcal{F})$ 
 >- Monotonía : Si $A\subset B$ entonces $\mu(A)\leq\mu(B)$ 
->- Subaditividad: Si $A\subset \bigcup_{m\in\mathbb{N}}A_{m}$ entonces $\mu(A)\leq\sum_{m\in\mathbb{N}}A_{m}$ entonces $\mu(A)\leq\sum_{m\in\mathbb{N}}\mu(A_{m})$
+>- Subaditividad: Si $A\subset \bigcup_{m\in\mathbb{N}}A_{m}$ entonces $\mu(A)\leq\sum_{m\in\mathbb{N}}A_{m}$ entonces $\mu(A)\leq\sum _ {m\in\mathbb{N}}\mu(A _ {m})$
 >- Continuo desde abajo: Si $A_{1}\subset A_{2}\subset\dots$ y $\bigcup_{i}A_{i=A}$ , es decir, $A_{i}\uparrow A$ y $\bigcup_i A_{i}=A\implies \mu(A_{i})\uparrow\mu(A)$ 
 >- Continuo desde arriba: Si $A_{i}\downarrow A$ , es decir, $A_{1}\supset A_{2}\supset\dots$ y $\bigcap_{i}A_{i}=A$ , con $\mu(A) _ {i}<\infty\implies \mu(A_{i})\downarrow\mu(A)$
 
