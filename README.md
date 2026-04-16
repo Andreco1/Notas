@@ -1,91 +1,132 @@
-## Probability Space and Measure Theory Basics
+Empezando por lo que es un **espacio de probabilidad**, es una triple $(\Omega, \mathcal{F}, P)$ donde $\Omega$ es un conjunto de "salidas", $\mathcal{F}$ es un conjunto de "eventos" y $P$ es una función tal que $P:\mathcal{F}\mapsto[0,1]$, es decir, $P$ es una función que le asigna una **probabilidad** a los eventos. Asumimos que $\mathcal{F}$ es una  $\sigma-$álgebra; i,e,. 
 
-We begin with the definition of a probability space, which is a triple
+>Definición: $\sigma-$álgebra:
+>Una colección no vacía de subconjuntos de $\Omega$ que satisfacen:
+I) Si $A \in\mathcal{F}$ entonces $A^{c}\in\mathcal{F}$ 
+II) Si $A_{i}\in\mathcal{F}$ es una secuencia contable de conjuntos entonces $\bigcup_{i}A_{i}\in\mathcal{F}$ 
 
+*Contable significa finito o contable infinito, es decir,  a lo más del tamaño de los naturales $\mathbb{N}$*.
+<>
+Ya que la $\bigcap_{i}A_{i}=\left( \bigcup_{i}A_{i} \right)^{c}$, entonces una $\sigma-$álgebra es cerrada bajo intersecciones contables. 
+
+Sin $P$, $(\Omega, \mathcal{F})$ es llamado "**espacio de medida**", es decir, un espacio donde s puede poner una medida, eso es lo siguiente que vamos a definir. 
+
+>Definición: Medida
+>Es un conjunto de funciones aditivas no negativo y contable,
+>$$
+>\mu:\mathcal{F}\mapsto \mathbb{R}
+>$$
+>con 
+>i) $\mu(A)\geq\mu(\emptyset)=0~~\forall A\in\mathcal{F}$
+>ii) Si $A_{i}\in\mathcal{F}$ es una secuancia disjunta de conjuntos contable, entonces:
+>$$
+>\mu\left( \bigcup A_{i} \right)=\sum_{i}\mu(A_{i})
+>$$
+
+
+Si $\mu(\Omega)=1$ llamamos a $\mu$ la medida de la probabilidad. Las medidas de probabilidad las vamos a denotar como $P$.
+
+>Definición: Función aditiva:
+>Sea $\mu:\mathcal{C}\mapsto\mathbb{\bar{R}}=\mathbb{R}\cup\{ -\infty,\infty \}$ una función definida sobre una colección de conjuntos $\mathcal{C}$. Decimos que $\mu$ es finitamente aditiva si:
+>- $\mu(\emptyset)=0$
+>- Para toda colección finita $(A_{n})_{1\leq n\leq m}$ de conjuntos $\mathcal{C}$, disjuntos dos a dos, tales que $\bigcup_{i=1}^{m}A_{i\in \mathcal{C}}$ se tiene 
+>$$
+>\mu\left( \bigcup_{n=1}^{m}A_{n} \right)=\sum_{n=1}^{n}\mu(A_{n})
+>$$
+
+
+Toda suma tiene que estar bien definida, tal que no pueda pasar que $\mu(A_{i})=-\infty$ y que $\mu(A_{j})=\infty$ para cualesquiera $i,j$. 
+
+Los siguientes resultados muestran las consecuencias de la **definición de medida**. En todos los casos, consideramos que todos los conjuntos están en $\mathcal{F}$. 
+
+>Teorema 1.1.1 :
+>Sea $\mu$ una medida en $(\Omega, \mathcal{F})$ 
+>- Monotonía : Si $A\subset B$ entonces $\mu(A)\leq\mu(B)$ 
+>- Subaditividad: Si $A\subset \bigcup_{m\in\mathbb{N}}A_{m}$ entonces $\mu(A)\leq\sum_{m\in\mathbb{N}}A_{m}$ entonces $\mu(A)\leq\sum_{m\in\mathbb{N}}\mu(A_{m})$
+>- Continuo desde abajo: Si $A_{1}\subset A_{2}\subset\dots$ y $\bigcup_{i}A_{i=A}$, es decir, $A_{i}\uparrow A$ y $\bigcup_i A_{i}=A\implies \mu(A_{i})\uparrow\mu(A)$ 
+>- Continuo desde arriba: Si $A_{i}\downarrow A$, es decir, $A_{1}\supset A_{2}\supset\dots$ y $\bigcap_{i}A_{i}=A$, con $\mu(A)_{i}<\infty\implies \mu(A_{i})\downarrow\mu(A)$
+
+
+
+
+Las pruebas de este teorema se obtienen del libro "Probability: Theory and Examples - Rick Durrett (2019)".
+
+**Prueba del Teorema 1.1.1:**
+- **Monotonía**:
+Sea $B-A=B\cap A^{c}$ la diferencia entre dos conjuntos. Usando $+$ para denotar la union disjunta, $B=A+(B-A)$ entonces:
 $$
-(\Omega, \mathcal{F}, P)
+\mu(B)=\mu(A)+\mu (B-A)\leq\mu(A)
 $$
+$\therefore \mu(B)\leq\mu(A)~~~~~~~~ \blacksquare$  
+<div align = "center">
+<script type = "text/tikz">
+\begin{tikzpicture}[domain=-5:5]
+\draw (-2,0) circle [radius=2cm] node[left]{$A$};
+\draw (0,0) circle [radius=2cm] node[left]{$B$};
+\end{tikzpicture}
+</script>
+</div>
 
-where $\Omega$ is the sample space, $\mathcal{F}$ is a collection of events, and $P: \mathcal{F} \to [0,1]$ is a function assigning probabilities to those events. We assume that $\mathcal{F}$ is a $\sigma$-algebra.
-
-### $\sigma$-algebra
-
-A $\sigma$-algebra over $\Omega$ is a non-empty collection $\mathcal{F}$ of subsets of $\Omega$ such that if $A \in \mathcal{F}$ then $A^c \in \mathcal{F}$, and if $(A_i)*{i \in \mathbb{N}} \subset \mathcal{F}$ then
-
+Entonces $A^{c}$ sería:
+<div align = "center">
+<script type = "text/tikz">
+\usetikzlibrary{backgrounds}
+\begin{tikzpicture}[domain=-5:5, show background rectangle, background rectangle/.style={fill=black!80}]
+\filldraw[fill=black!80!white!] (0,0) circle [radius=2cm] node[right]{$B$};
+\filldraw[fill = white] (-2,0) circle [radius=2cm] node[left, color = black]{$A$};
+\end{tikzpicture}
+</script>
+</div>
+Entonces la intersección con $B$ sería 
+$B-A=B\cap A^{c}$
+<div align = "center">
+<script type = "text/tikz">
+\begin{tikzpicture}[domain=-5:5]
+\filldraw[fill=black!80!white!] (0,0) circle [radius=2cm] node[right]{$B$};
+\filldraw[fill = white] (-2,0) circle [radius=2cm] node[left, color = black]{$A$};
+\end{tikzpicture}
+</script>
+</div>
+Esto los convierte en conjuntos disjuntos, entonces si ahora definimos la union disjunta como $+$ podemos decir que $B=(B-A) + A$, si ahora tomamos la medida de ambos lados
 $$
-\bigcup*{i=1}^{\infty} A_i \in \mathcal{F}.
+\mu(B)=\mu(A)+\mu(B-A)\geq\mu(A)
 $$
-
-Using De Morgan’s laws,
-
+el argumento es similar a decir:
 $$
-\bigcap_{i} A_i = \left( \bigcup_i A_i^c \right)^c,
+A-B = A-B
 $$
-
-so a $\sigma$-algebra is also closed under countable intersections. Here “countable” means finite or countably infinite, that is, at most the size of $\mathbb{N}$.
-
-### Measure space
-
-Without the function $P$, the pair $(\Omega, \mathcal{F})$ is called a measure space.
-
-### Measure
-
-A measure is a function
-
 $$
-\mu: \mathcal{F} \to [0, \infty]
+A=(A-B)+B
 $$
-
-such that $\mu(\emptyset) = 0$ and for any countable collection of pairwise disjoint sets $(A_i)$ one has
-
 $$
-\mu\left( \bigcup_{i=1}^{\infty} A_i \right) = \sum_{i=1}^{\infty} \mu(A_i).
+A=(A-B)+B\leq B
 $$
-
-If $\mu(\Omega) = 1$, then $\mu$ is called a probability measure and is usually denoted by $P$.
-
-### Finite additivity
-
-Let $\mu: \mathcal{C} \to \overline{\mathbb{R}} = \mathbb{R} \cup {\pm\infty}$. We say that $\mu$ is finitely additive if $\mu(\emptyset) = 0$ and for any finite collection of pairwise disjoint sets $A_1, \dots, A_n$,
-
 $$
-\mu\left( \bigcup_{i=1}^n A_i \right) = \sum_{i=1}^n \mu(A_i).
+\therefore A\leq B ~~~~~~ \blacksquare
 $$
-
-### Basic properties of measures
-
-Let $\mu$ be a measure on $(\Omega, \mathcal{F})$. If $A \subset B$, then $\mu(A) \leq \mu(B)$. If $A \subset \bigcup_{m} A_m$, then
-
+- **Subaditividad**:
+Si tomamos trozos del conjunto $A$ tal que $A'_{n}=A_{n}\bigcap A$, aseguramos que los conjuntos sean disjuntos, tomamos entonces $B_{1}=A_{1}'$ y para cualquier $n>1$ tomamos a $B_{n}=A_{n}'-\bigcup_{m=1}^{n-1}A'_{m}$, esto vuelve a los conjuntos disjuntos y fuerza que $\bigcup_{n\in\mathbb{N}}B_{n}=A$, ya que $B_{m}\subset A_{m}$ y por la condición de monotonía $\mu(B_{m})\leq\mu(A_{m})$, entonces:
 $$
-\mu(A) \leq \sum_{m=1}^{\infty} \mu(A_m).
+\mu(A)=\sum_{m=1}^{\infty}\mu(B_{m})\leq\sum_{m=1}^{\infty}\mu(A_{m})
 $$
-
-If $A_1 \subset A_2 \subset \cdots$ and $\bigcup_i A_i = A$, then
-
 $$
-\mu(A_i) \uparrow \mu(A).
+\therefore \mu(A)\leq\sum_{m=1}^{\infty}\mu(A_{m}) ~~~~~~\blacksquare
 $$
-
-If $A_1 \supset A_2 \supset \cdots$ and $\bigcap_i A_i = A$, with $\mu(A_1) < \infty$, then
-
+- **Continuo por abajo**:
+Si $A_{1}\subset A_{2}\subset A_{3}\subset\dots$ y $\bigcup_{i}A_{i}=A$, es decir $A_{i}\uparrow A$ y $\bigcup_{i}A_{i} = A \implies$ 
 $$
-\mu(A_i) \downarrow \mu(A).
+\mu(A_{i})\uparrow \mu(A)
 $$
-
-### Sketch of proof of monotonicity
-
-Let $B - A = B \cap A^c$. Then $B = A \cup (B - A)$ as a disjoint union, so
-
+se refiere a la sucesión creciente de las medidas de los elementos (subconjuntos) de $A$, la demostración requiere tomar a $B_{n}=A_{n}-A_{n-1}$. Entonces las $B_{n}$ son disjuntas y tienen a $\bigcup_{m=1}^{\infty}B_{m}=A$, entonces $\bigcup_{m=1}^{n}B_{m}=A_{n}$, lo que implica:
 $$
-\mu(B) = \mu(A) + \mu(B - A) \geq \mu(A).
+\mu(A)=\sum_{m=1}^{\infty}\mu(B_{m})=\lim_{ n \to \infty } \sum_{m=1}^{n}\mu(B_{m})=\lim_{ n \to \infty } \mu(A_{m})
 $$
-
-### Discrete probability space
-
-Let $\Omega$ be countable and let $\mathcal{F}$ be the collection of all subsets of $\Omega$. Define
-
+- **Continuo por arriba:**
+sea $A_{1}-A_{n}\uparrow A_{1}$ así que $\mu(A_{1}-A_{n})=\mu(A_{1})-\mu_{A}$ y se sigue que 
 $$
-P(A) = \sum_{\omega \in A} P(\omega),
+\mu(A_{n})\downarrow \mu(A)~~~~\blacksquare
 $$
+>Ejemplo 1.1.2. Espacios de probabilidad discretos:
+>Sea $\Omega=a$ un conjunto contable, i.e., finito o contable finito (a lo más del tamaño de los $\mathbb{N}$). sea $\mathcal{F}=$el conjunto de todos los subconjuntos de $\Omega$.
+>Sea $P(A)=\sum_{\omega \in A} P(\omega)$ donde $P\geq 0$ y $\sum_{\omega \in \Omega}=1$  
 
-where $P(\omega) \geq 0$ and $\sum_{\omega \in \Omega} P(\omega) = 1$.
