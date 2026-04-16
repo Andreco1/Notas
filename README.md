@@ -70,7 +70,7 @@ $\therefore \mu(B)\leq\mu(A)~~~~~~~~ \blacksquare$
 
 - **Subaditividad**:
 
-Si tomamos trozos del conjunto $A$ tal que $A'_{n}=A_{n}\bigcap A$ , aseguramos que los conjuntos sean disjuntos, tomamos entonces $B_{1}=A_{1}'$ y para cualquier $n>1$ tomamos a $B_{n}=A_{n}'-\bigcup_{m=1}^{n-1}A'_{m}$ , esto vuelve a los conjuntos disjuntos y fuerza que $\bigcup _ {n\in\mathbb{N}}B_{n}=A$ , ya que $B_{m}\subset A_{m}$ y por la condición de monotonía $\mu(B_{m})\leq\mu(A_{m})$ , entonces:
+Si tomamos trozos del conjunto $A$ tal que $A'_{n}=A_{n}\bigcap A$ , aseguramos que los conjuntos sean disjuntos, tomamos entonces $B_{1}=A_{1}'$ y para cualquier $n>1$ tomamos a $B_{n}=A_{n}'-\bigcup_{m=1}^{n-1}A'_{m}$ , esto vuelve a los conjuntos disjuntos y fuerza que $\bigcup _ {n\in\mathbb{N}}B _ {n}=A$ , ya que $B_{m}\subset A_{m}$ y por la condición de monotonía $\mu(B_{m})\leq\mu(A_{m})$ , entonces:
 
 $$
 \mu(A)=\sum_{m=1}^{\infty}\mu(B_{m})\leq\sum_{m=1}^{\infty}\mu(A_{m})
