@@ -15,14 +15,10 @@ Sin $P$ , $(\Omega, \mathcal{F})$ es llamado "**espacio de medida**", es decir, 
 
 >Definición: Medida
 >
->Es un conjunto de funciones aditivas no negativo y contable,
+>Es un conjunto de funciones aditivas no negativo y contable, $\mu:\mathcal{F}\mapsto \mathbb{R}$ con:
 >
->$$
->\mu:\mathcal{F}\mapsto \mathbb{R}
->$$
->
->con 
 >i) $\mu(A)\geq\mu(\emptyset)=0~~\forall A\in\mathcal{F}$
+>
 >ii) Si $A_{i}\in\mathcal{F}$ es una secuancia disjunta de conjuntos contable, entonces:
 >
 >$$
