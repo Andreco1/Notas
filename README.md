@@ -70,7 +70,7 @@ $\therefore \mu(B)\leq\mu(A)~~~~~~~~ \blacksquare$
 
 - **Subaditividad**:
 
-Si tomamos trozos del conjunto $A$ tal que $A'_{n}=A_{n}\bigcap A$, aseguramos que los conjuntos sean disjuntos, tomamos entonces $B_{1}=A_{1}'$ y para cualquier $n>1$ tomamos a $B_{n}=A_{n}'-\bigcup_{m=1}^{n-1}A'_{m}$, esto vuelve a los conjuntos disjuntos y fuerza que $\bigcup_{n\in\mathbb{N}}B_{n}=A$, ya que $B_{m}\subset A_{m}$ y por la condición de monotonía $\mu(B_{m})\leq\mu(A_{m})$, entonces:
+Si tomamos trozos del conjunto $A$ tal que $A'_{n}=A_{n}\bigcap A$ , aseguramos que los conjuntos sean disjuntos, tomamos entonces $B_{1}=A_{1}'$ y para cualquier $n>1$ tomamos a $B_{n}=A_{n}'-\bigcup_{m=1}^{n-1}A'_{m}$ , esto vuelve a los conjuntos disjuntos y fuerza que $\bigcup_{n\in\mathbb{N}}B_{n}=A$ , ya que $B_{m}\subset A_{m}$ y por la condición de monotonía $\mu(B_{m})\leq\mu(A_{m})$ , entonces:
 
 $$
 \mu(A)=\sum_{m=1}^{\infty}\mu(B_{m})\leq\sum_{m=1}^{\infty}\mu(A_{m})
@@ -88,7 +88,7 @@ $$
 \mu(A_{i})\uparrow \mu(A)
 $$
 
-se refiere a la sucesión creciente de las medidas de los elementos (subconjuntos) de $A$, la demostración requiere tomar a $B_{n}=A_{n}-A_{n-1}$. Entonces las $B_{n}$ son disjuntas y tienen a $\bigcup_{m=1}^{\infty}B_{m}=A$, entonces $\bigcup_{m=1}^{n}B_{m}=A_{n}$, lo que implica:
+se refiere a la sucesión creciente de las medidas de los elementos (subconjuntos) de $A$ , la demostración requiere tomar a $B_{n}=A_{n}-A_{n-1}$. Entonces las $B_{n}$ son disjuntas y tienen a $\bigcup_{m=1}^{\infty}B_{m}=A$ , entonces $\bigcup_{m=1}^{n}B_{m}=A_{n}$ , lo que implica:
 
 $$
 \mu(A)=\sum_{m=1}^{\infty}\mu(B_{m})=\lim_{ n \to \infty } \sum_{m=1}^{n}\mu(B_{m})=\lim_{ n \to \infty } \mu(A_{m})
@@ -103,6 +103,6 @@ $$
 $$
 
 >Ejemplo 1.1.2. Espacios de probabilidad discretos:
->Sea $\Omega=a$ un conjunto contable, i.e., finito o contable finito (a lo más del tamaño de los $\mathbb{N}$). sea $\mathcal{F}=$el conjunto de todos los subconjuntos de $\Omega$.
+>Sea $\Omega=a$ un conjunto contable, i.e., finito o contable finito (a lo más del tamaño de los $\mathbb{N}$). sea $\mathcal{F}=$ el conjunto de todos los subconjuntos de $\Omega$.
 >Sea $P(A)=\sum_{\omega \in A} P(\omega)$ donde $P\geq 0$ y $\sum_{\omega \in \Omega}=1$  
 
