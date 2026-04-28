@@ -1,4 +1,7 @@
 {
   "theme": "obsidian",
-  "cssTheme": "Ukiyo"
+  "cssTheme": "ITS Theme",
+  "accentColor": "#810e0e",
+  "showRibbon": true,
+  "nativeMenus": false
 }
