@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "probabilidad y estadística/Teoría de la medida.md",
+                "file": "Relatividad/Espacio tiempo con y sin coordenadas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Teoría de la medida"
+              "title": "Espacio tiempo con y sin coordenadas"
             }
           }
         ],
@@ -107,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "2a00d48565ffdd3d",
@@ -215,8 +215,8 @@
   },
   "active": "d4c9ca0bbcb250f4",
   "lastOpenFiles": [
-    "Snippets.md",
     "probabilidad y estadística/Teoría de la medida.md",
+    "Snippets.md",
     "Relatividad/Espacio tiempo con y sin coordenadas.md",
     "probabilidad y estadística/Untitled",
     "probabilidad y estadística",
